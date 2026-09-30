@@ -19,3 +19,14 @@ for (int i = 0; i<3; i++)
 }
 int osszertek = osszes[0].Ar * osszes[0].Mennyiseg + osszes[1].Ar * osszes[1].Mennyiseg + osszes[2].Ar * osszes[2].Mennyiseg;
 double atlag = (osszes[0].Ar + osszes[1].Ar + osszes[2].Ar) / osszes.Count;
+Console.WriteLine("Adatok feldolgozása...");
+Console.WriteLine("========================================");
+Console.WriteLine("Rögzített termékek a raktárban:");
+for (int i = 0; i < osszes.Count; i++)
+{
+    Console.WriteLine($"-{osszes[i].Nev}: {osszes[i].Ar}Ft/db ({osszes[i].Mennyiseg} db) -> Érték:{osszes[i].Ar * osszes[i].Mennyiseg} Ft");
+}
+Console.WriteLine("----------------------------------------");
+Console.WriteLine($"Raktár teljes összértéke: {osszertek} Ft");
+Console.WriteLine($"Termékek átlagos egységára: {atlag} Ft");
+Console.WriteLine("========================================");
