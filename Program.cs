@@ -17,5 +17,5 @@ for (int i = 0; i<3; i++)
     osszes.Add(ujTermek);
     Console.WriteLine();
 }
-
-Console.WriteLine($"{osszes.Count}");
+int osszertek = osszes[0].Ar * osszes[0].Mennyiseg + osszes[1].Ar * osszes[1].Mennyiseg + osszes[2].Ar * osszes[2].Mennyiseg;
+double atlag = (osszes[0].Ar + osszes[1].Ar + osszes[2].Ar) / osszes.Count;
